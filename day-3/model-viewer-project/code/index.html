@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+    <!-- OPTIONAL: The :focus-visible polyfill removes the focus ring for some input types -->
+    <script src="https://unpkg.com/focus-visible@5.0.2/dist/focus-visible.js" defer></script>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer id="model-viewer" interaction-prompt="none" examplebounds="tight" autorotate enable-pan src="scene.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="neutral" camera-orbit="425.3deg 74.53deg auto" auto-rotate>
+      <button class="Hotspot" slot="hotspot-3" data-position="0.06582684035305003m -0.0048148036720820145m 0.019636623892583742m" data-normal="0.1586691733241915m 0.9431475110714509m -0.2920562716264544m" data-orbit="739.7deg 27.34deg auto" data-target="-0.06m 0.0m 0.03m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" onclick='annotationClicked(this)'>Propellers</div>
+      </button><button class="Hotspot" slot="hotspot-6" data-position="-0.06756541802642725m 0.0026405192860482762m -0.03041754722727637m" data-normal="-0.14447797125485984m -0.9440518335884481m 0.296466273495602m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" onclick='annotationClicked(this)'>Motor</div>
+      </button><button class="Hotspot" slot="hotspot-9" data-position="-0.008190076574565958m -0.015272551780432866m -0.035080770320707666m" data-normal="-0.1369078890812124m -0.46745152460122247m -0.8733529080820187m" data-orbit="955.1deg 122.9deg auto" data-target="-0.01m 0.02m 0.01m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" onclick='annotationClicked(this)'>LED Indicator</div>
+      </button><button class="Hotspot" slot="hotspot-10" data-position="0.005878446107894954m 0.016802429450163848m 0.019890313008545678m" data-normal="0.19252780368414424m 0.9768558919281998m -0.0931966266220041m" data-orbit="837.3deg 22.5deg auto" data-target="-0.01m 0.02m 0.01m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation" onclick='annotationClicked(this)'>Aircraft Nose</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      
+    </model-viewer>  
+
+    <h1 id="product_name">DRONEIO. Designed for efficiency.</h1>
+      <div id="footer">
+        <p id="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b></p>
+      </div>
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script>
+
+      const mv = document.querySelector("#model-viewer");
+
+      const annotationClicked = (a) => {
+
+        let ds = a.parentNode.dataset;
+
+        mv.cameraTarget = ds.target;
+
+        mv.cameraOrbit = ds.orbit;
+
+        if(ds.fov !== undefined)
+
+            mv.fieldOfView = ds.fov;
+
+      }
+
+    </script>
+  </body>
+</html>

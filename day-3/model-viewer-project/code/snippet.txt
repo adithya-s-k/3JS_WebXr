@@ -1,0 +1,20 @@
+<model-viewer bounds="tight" enable-pan src="scene.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls poster="poster.webp" shadow-intensity="1" environment-image="neutral" camera-orbit="425.3deg 74.53deg auto" auto-rotate>
+    <button class="Hotspot" slot="hotspot-3" data-position="0.06582684035305003m -0.0048148036720820145m 0.019636623892583742m" data-normal="0.1586691733241915m 0.9431475110714509m -0.2920562716264544m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Propellers</div>
+    </button><button class="Hotspot" slot="hotspot-6" data-position="-0.06756541802642725m 0.0026405192860482762m -0.03041754722727637m" data-normal="-0.14447797125485984m -0.9440518335884481m 0.296466273495602m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Motor</div>
+    </button><button class="Hotspot" slot="hotspot-9" data-position="-0.008190076574565958m -0.015272551780432866m -0.035080770320707666m" data-normal="-0.1369078890812124m -0.46745152460122247m -0.8733529080820187m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">LED Indicator</div>
+    </button><button class="Hotspot" slot="hotspot-10" data-position="0.005878446107894954m 0.016802429450163848m 0.019890313008545678m" data-normal="0.19252780368414424m 0.9768558919281998m -0.0931966266220041m" data-visibility-attribute="visible">
+        <div class="HotspotAnnotation">Aircraft Nose</div>
+    </button>
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button>
+    <div id="ar-prompt">
+        <img src="https://modelviewer.dev/shared-assets/icons/hand.png">
+    </div>
+</model-viewer>
