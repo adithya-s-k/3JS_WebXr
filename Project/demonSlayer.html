@@ -26,6 +26,11 @@
             left: 3rem;
         }
         
+        .Nez{
+            position: relative;
+            top:2rem;
+        }
+        
         #tan{
             background-image:
             linear-gradient(to bottom,rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
@@ -59,7 +64,8 @@
             color: white;
             padding: 20px;
         }
-        #ren{
+        
+        #kyo{
             background-image:
             linear-gradient(to bottom,rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
             url('./assets/renguko_wallpaper.jpg');
@@ -67,15 +73,76 @@
             color: white;
             padding: 20px;
         }
+
+        #dak{
+            background-image:
+            linear-gradient(to bottom,rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)),
+            url('./assets/gyotoro.jpg');
+            background-size: cover;
+            color: white;
+            padding: 20px;
+        }
+        
         .Content{
             padding-top: 50px;
         }
+        @import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+
+        h1 {
+        background: rgba(0,0,0,0.5);
+        padding: 10px;
+        font-size: 40px;
+        }
+
+        .video-container{
+        width: 100vw;
+        height: 100vh;
+        }
+
+        .iframe_main {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(-50%, -50%);
+        }
+
+        #text{
+        position: absolute;
+        color: #FFFFFF;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        }
+
+        @media (min-aspect-ratio: 16/9) {
+        .video-container iframe {
+            height: 56.25vw;
+        }
+        }
+        @media (max-aspect-ratio: 16/9) {
+        .video-container iframe {
+            width: 177.78vh;
+        }
+}
 
     </Style>
 </head>
 <body>
+
+    <section >
+        <div class="video-container">
+            <iframe class="iframe_main" title="Demon Slayer_Kimetsu no Yaiba 鬼滅の刃" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/66a2e0f8c51f4a9794b04c78091b5bd8/embed?autostart=1&preload=1&ui_hint=0&ui_theme=dark&dnt=1"> </iframe>
+        </div>
+        
+        <div id="text">
+            <img style="width: 300px;" src="./assets/demon_slayer.png" >
+        </div>
+    </section>
+
     <section class="full-height" id="tan">
-        <div class="Tan" > <iframe title="Tanjiro Kamado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/81152fbedc99474785d264a29bcbe36c/embed?ui_theme=dark"> </iframe> </div>
+        <div class="Tan" > <iframe title="Tanjiro Kamado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/81152fbedc99474785d264a29bcbe36c/embed?autostart=1&ui_theme=dark"> </iframe> </div>
         <div class="Content">
             <h1 style="font-weight: bold;">Tanjiro Kamado</h1>
             <p style="font-size: smaller;">Set in a world not too different from the Edo period in Japan, Tanjiro is a cheerful boy in charge of the family business selling charcoal living a humble yet happy life. One day as usual Tanjiro departs into town by foot to sell charcoal however, is unable to make it back home by nightfall. He returns the next day to find his entire family murdered. The only survivor was his younger sister,Nezuko who was injured while protecting her younger brother, Tanjiro not entirely sure as to what has occurred, departs seeking help to cure his sister. The two are soon confronted by a demon slayer named Giyu Tomioka. Giyu later instructs him to seek out a former demon slayer named Urokodaki for answers. How far is he willing to go to protect his sister, to avenge his family, to hunt the demon responsible for the murder of his family in hopes of finding a cure for his sister Nezuko. Tanjiro moves towards the path of a Demon Slayer.</p>
@@ -84,11 +151,11 @@
     </section>
     
     <section class="full-height" id="nez">
-        <div class="Tan"> <iframe title="Nezuko Kamado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/10c9441620a7477c9c783e010b3e1dc1/embed?autospin=1&preload=1&ui_hint=0&ui_theme=dark&dnt=1"> </iframe> </div>
         <div class="Content">
             <h1 style="font-weight: bold;">Nezuko Kamado</h1>
             <p style="font-size: smaller;">Nezuko is a kind and caring girl that takes care of her family, often helping with chores around the home. However after the brutal murder of her family, she transforms into a Demon and loses most of her memories regarding her family. Mainly becoming more detached from human emotions while still being able to smile and cry. Compared to other Demons, she is calm and less malicious towards humans and still retains her original caring and protective personality towards humans she feels as family. Her strong willpower is such that despite her circumstances as a human eating demon, she still refuses to consume any flesh or blood. When in battle, she is brazen and fiercely protective of her brother and his allies.</p>
         </div>
+        <div class="Nez"> <iframe title="Nezuko Kamado" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/10c9441620a7477c9c783e010b3e1dc1/embed?autospin=1&preload=1&ui_hint=0&ui_theme=dark&dnt=1"> </iframe> </div>
     </section>
     
     <section class="full-height" id="zen">
@@ -107,19 +174,26 @@
             <p>“Don’t cry even if you have regrets! No matter how pathetic or humiliated you feel, you still have to go on living”—Inosuke Hashibira</p>
         </div>
     </section>
-
-    <section class="full-height" id="ren">
-        <div class="Tan"> <iframe title="Kyojuro Rengoku" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/e8d51f0927974c7ea246731ccf73fca2/embed?autospin=1&preload=1&ui_theme=dark&dnt=1"> </iframe> </div>\
+    
+    <section class="full-height" id="kyo">
+        <div class="Tan"> <iframe title="Kyojuro Rengoku" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/e8d51f0927974c7ea246731ccf73fca2/embed?autospin=1&preload=1&ui_theme=dark&dnt=1"> </iframe> </div>
         <div class="Content">
-            <h1 style="font-weight: bold;">Kyojuro Rengoku</h1>
-                <p style="font-size: smaller;">Kyojuro Rengoku  is part of the Demon Slayer Corps and is the Flame Pillar  / Flame Hashira. Kyojuro is very enthusiastic towards his duties as a Demon Slayer and takes his responsibilities as a Pillar very seriously.  He has a strong sense of justice and has a strict sense of right and wrong . Kyojuro always tries to stay positive and cheerful. He believes that the strong have a duty to protect the weak and uses his strength and knowledge to protect and nurture helpless people and fellow Demon Slayers. His mother taught him the importance of life and moral values. His fight with the upper moon Three was his last fight where he loses his life trying to protect Tanjiro and the others. Despite losing the fight and his life , he never once regretted his choice and left the world with a smile on his face.</p>
-                <p>“Go ahead and live with your head held high. No matter how devastated you may be by your own weakness or uselessness, set your heart ablaze.”
-                    -Rengoku</p>
+        <h1 style="font-weight: bold;">Kyojuro Rengoku</h1>
+        <p style="font-size: smaller;">Kyojuro Rengoku  is part of the Demon Slayer Corps and is the Flame Pillar  / Flame Hashira. Kyojuro is very enthusiastic towards his duties as a Demon Slayer and takes his responsibilities as a Pillar very seriously.  He has a strong sense of justice and has a strict sense of right and wrong . Kyojuro always tries to stay positive and cheerful. He believes that the strong have a duty to protect the weak and uses his strength and knowledge to protect and nurture helpless people and fellow Demon Slayers. His mother taught him the importance of life and moral values. His fight with the upper moon Three was his last fight where he loses his life trying to protect Tanjiro and the others. Despite losing the fight and his life , he never once regretted his choice and left the world with a smile on his face.</p>
+        <p>“Go ahead and live with your head held high. No matter how devastated you may be by your own weakness or uselessness, set your heart ablaze.”
+            -Rengoku</p>
         </div>
     </section>
 
-    <section class="full-height">
+
+    <section class="full-height" id="dak">
         <div class="Tan"> <iframe title="Daki & Gyutaro" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share width="500" height="375" src="https://sketchfab.com/models/2122d8b2880e4f26a18a900011e5e753/embed?autospin=1&preload=1&ui_hint=0&ui_theme=dark&dnt=1"> </iframe> </div>
+        <div class="Content">
+            <h1 style="font-weight: bold;">Gyutaro and Daki</h1>
+            <p style="font-size: smaller;">Gyutaro  is a member of the Twelve Demon Moons . He was born in the Red Light District's lowest caste area where sick prostitutes were left to die as they couldn't work anymore. His mother was mentally ill and tried to kill him and herself quite a number of times .But despite having a weak body he survived the abuse and managed to live. Since he was ugly and dirty he was detested and looked down upon. But when his younger sister, Ume was born, something changed inside of him. He raised Ume himself, she was incredibly beautiful and quickly became his pride and joy so he worked hard to protect her.  His sense of inferiority disappeared and his ugliness became his pride. He felt like they could both gain a better life until Ume turned 12. His sister stabbed the eye of a samurai and blinded him while he was away working. Since Gyutaro wasn't present to protect her, she was then tied up and burned alive and left to die . When he found the still alive burnt body of his sister , he was filled with rage and killed the samurai and brothel owner who caused Ume this grief. Gyutaro then carried his sister’s burnt body around town searching for help , but unfortunately it was of no use and it only lead him to pass out of exhaustion .The pair was then found by the Upper Moon Six of the time Doma who offered to help by turning them into Demons. </p>
+            <p>”Crying’s not gonna help, at least attach your own head yourself.”
+                —Gyutaro </p>
+            </div>
     </section>
 </body>
 
